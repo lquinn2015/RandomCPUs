@@ -1,0 +1,13 @@
+boot:   li r0 0x1       ;xi = 1
+        li r1 0x1       ;xt = 1
+        sw r2 r0        ;a0 = 1
+fib:    add r3 r0       ; t =xi
+        add r0 r1       ; xi = xt + xi
+        li r1 0x0
+        or r1 r3        ; xt = xi_1
+        li r3 0x1
+        add r2 r3
+        sw r2 r0        ; ai = xi
+        li r3 0x0
+        J %fib
+
