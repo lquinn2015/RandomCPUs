@@ -1,0 +1,307 @@
+
+*** Running vivado
+    with args -log CPUModel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPUModel.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source CPUModel.tcl -notrace
+Command: synth_design -top CPUModel -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3572
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPUModel' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/CPUModel.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockManagement' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ClockManagement.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'DebounceButton' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/DebounceButton.sv:12]
+	Parameter N bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DebounceButton' (1#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/DebounceButton.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'ClockManagement' (2#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ClockManagement.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ProgramCounter.sv:23]
+	Parameter PC_JUMP bound to: 2'b10 
+	Parameter PC_BRANCH bound to: 2'b01 
+	Parameter PC_STEP bound to: 2'b00 
+WARNING: [Synth 8-151] case item 2'b10 is unreachable [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ProgramCounter.sv:48]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (3#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ProgramCounter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ROM.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'fib.h-fpga.mem' is read successfully [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ROM.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (4#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ROM.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Controller.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (5#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RegisterFile.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RegisterFile.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/MUX.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (7#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/MUX.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALU.sv:23]
+	Parameter ALU_AND bound to: 3'b000 
+	Parameter ALU_OR bound to: 3'b001 
+	Parameter ALU_ADD bound to: 3'b010 
+	Parameter ALU_SUB bound to: 3'b110 
+	Parameter ALU_SLT bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'ALUController' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALUController.sv:23]
+	Parameter ALU_AND bound to: 3'b000 
+	Parameter ALU_OR bound to: 3'b001 
+	Parameter ALU_ADD bound to: 3'b010 
+	Parameter ALU_SUB bound to: 3'b110 
+	Parameter ALU_SLT bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'ALUController' (8#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALUController.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RAM.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (10#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RAM.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'BCDMultiplexier' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/BCDMultiplexier.sv:23]
+	Parameter SELECT_ONE bound to: 4'b0001 
+	Parameter SELECT_TWO bound to: 4'b0010 
+	Parameter SELECT_THREE bound to: 4'b0100 
+	Parameter SELECT_FOUR bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'Binary2HexBCD' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Binary2HexBCD.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Binary2HexBCD' (11#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Binary2HexBCD.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/BCDMultiplexier.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'BCDMultiplexier' (12#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/BCDMultiplexier.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPUModel' (13#1) [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/CPUModel.sv:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'BCDMultiplexier'
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_OP_reg' [C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALUController.sv:36]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              SELECT_ONE |                             0001 |                             0001
+              SELECT_TWO |                             0010 |                             0010
+            SELECT_THREE |                             0100 |                             0100
+             SELECT_FOUR |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'BCDMultiplexier'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
+	               32 Bit	(4 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   9 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	  14 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------+-----------+----------------------+--------------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives               | 
++------------+----------------+-----------+----------------------+--------------------------+
+|CPUModel    | memory/mem_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|CPUModel    | regs/mem_reg   | Implied   | 4 x 8                | RAM16X1D x 8	            | 
++------------+----------------+-----------+----------------------+--------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------+-----------+----------------------+--------------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives               | 
++------------+----------------+-----------+----------------------+--------------------------+
+|CPUModel    | memory/mem_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|CPUModel    | regs/mem_reg   | Implied   | 4 x 8                | RAM16X1D x 8	            | 
++------------+----------------+-----------+----------------------+--------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |     8|
+|3     |LUT1     |    20|
+|4     |LUT2     |    32|
+|5     |LUT3     |     3|
+|6     |LUT4     |    50|
+|7     |LUT5     |    19|
+|8     |LUT6     |    12|
+|9     |RAM16X1D |     8|
+|10    |RAM64M   |     8|
+|11    |FDRE     |    90|
+|12    |IBUF     |    12|
+|13    |OBUF     |    11|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+----------------+------+
+|      |Instance        |Module          |Cells |
++------+----------------+----------------+------+
+|1     |top             |                |   275|
+|2     |  alu           |ALU             |    15|
+|3     |  Clock         |ClockManagement |    76|
+|4     |    btn         |DebounceButton  |    74|
+|5     |  PC            |ProgramCounter  |    35|
+|6     |  bcd           |BCDMultiplexier |    62|
+|7     |    bcd1encoder |Binary2HexBCD   |    14|
+|8     |    bcd2encoder |Binary2HexBCD_0 |    14|
+|9     |    bcd3encoder |Binary2HexBCD_1 |    14|
+|10    |    bcd4encoder |Binary2HexBCD_2 |    14|
+|11    |  memory        |RAM             |    22|
+|12    |  programMemory |ROM             |     4|
+|13    |  regs          |RegisterFile    |    36|
++------+----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.367 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.367 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1029.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1029.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1029.367 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.runs/synth_1/CPUModel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPUModel_utilization_synth.rpt -pb CPUModel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 28 17:23:16 2020...

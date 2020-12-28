@@ -20,51 +20,55 @@ rd denotes the destination register
 Imm2 denotes 2 bit immediate values
 
 Instructions syntax for complier
+0000aabb
 add: tested
 	add rd rs
 	Calculates rs + rd and stores the result in rd
 	Example: add r0 r1
-
+0001ddss
 and: untested
 	and rd rs
 	Calculates rs & rd and stores the result in rd
 	Example: and r0 r1
-
+0010ddss
 or: untested
 	or rd rs
 	Calculates rs | rd and stores the result in rd
 	Example: or r0 r1
-
+0011ddss
 sub: untested
 	sub rd rs
 	Calculates rd - rs and stores the result in rd
 	Example: sub r0 r1
-
+0100ddss
 slt: untested
 	slt rd rs
 	If  rd < rs than rd = 1
 	Example: slt r0 r1
-
+0101ddss
 beq: untested
 	beq rd rs
 	Branches to address in rd if rs == 0 else nop
 	Example: beq r0 r1
-
+1001ddss
 lw: untested
 	lw rd rs
 	Loads memory stored at rs in rd. rd = *rs
 	Example: lw r0 r1
 
+1000ddss
 sw: tested
 	sw rd rs
 	Stores rd into memory address rs  *rs = rd
 	Example: sw r0 r1
 
+1010ddii
 li: tested
 	li rd Imm2
 	Loads a 2-bit zero-extended immediate value into rd
 	Example: li r1 0x2
 
+11iiiiii
 J: tested
 	J Imm6
 	Set Pc to ZE(Imm6) << 2

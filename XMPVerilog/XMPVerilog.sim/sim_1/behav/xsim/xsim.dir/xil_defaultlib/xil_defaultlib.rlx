@@ -1,0 +1,21 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/BCDMultiplexierTestBench.sv,1608692019,systemVerilog,,,,BCDMultiplexierTestBench,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/Binary2HexBCDTestbench.sv,1608392315,systemVerilog,,,,Binary2HexBCDTestbench,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/CPUTestBench.sv,1607819371,systemVerilog,,,,CPUTestBench,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/ProgramCounterTestBench.sv,1609121835,systemVerilog,,,,ProgramCounterTestBench,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/ROMFibTestBench.sv,1609193089,systemVerilog,,,,ROMFibTestBench,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALU.sv,1607869911,systemVerilog,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/CPUTestBench.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALUController.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/CPUModel.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ClockManagement.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Controller.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/DebounceButton.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/MUX.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ProgramCounter.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RAM.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ROM.sv;C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RegisterFile.sv,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALUController.sv,,$unit_ALU_sv;ALU,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ALUController.sv,1607806135,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/CPUModel.sv,,ALUController,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/BCDMultiplexier.sv,1608693488,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Binary2HexBCD.sv,,BCDMultiplexier,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Binary2HexBCD.sv,1608691189,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/BCDMultiplexierTestBench.sv,,Binary2HexBCD,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/CPUModel.sv,1607819218,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ClockManagement.sv,,CPUModel,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/Controller.sv,1607805464,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/DebounceButton.sv,,Controller,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/MUX.sv,1607817997,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ProgramCounter.sv,,MUX,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ProgramCounter.sv,1609120774,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/ProgramCounterTestBench.sv,,ProgramCounter,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RAM.sv,1607300349,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ROM.sv,,RAM,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/ROM.sv,1609192953,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/ROMFibTestBench.sv,,ROM,,,,,,,,
+C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sources_1/new/RegisterFile.sv,1607281511,systemVerilog,,C:/Users/msg23/LearningVerilog/XMPVerilog/XMPVerilog.srcs/sim_1/new/CPUTestBench.sv,,RegisterFile,,,,,,,,

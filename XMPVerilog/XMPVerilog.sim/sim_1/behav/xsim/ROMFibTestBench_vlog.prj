@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../XMPVerilog.srcs/sources_1/new/ROM.sv" \
+"../../../../XMPVerilog.srcs/sim_1/new/ROMFibTestBench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
